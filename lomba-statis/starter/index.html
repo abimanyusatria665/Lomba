@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT Expo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="starter.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="starter.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- header starts  -->
 
     <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo"> <i class="fas fa-laptop-code"></i> weboo </a>
 
-        <div class="header-1">
+        <form action="" method="post" class="search-form">
+          <input
+            type="text"
+            placeholder="search course..."
+            name="searchbar"
+            autofocus
+            autocomplete="off"
+          />
+          <button type="submit" name="search" class="searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
 
-            <a href="#" class="logo"> <i class="fas fa-laptop-code"></i> weboo </a>
-
-            <form action="" method="post" class="search-form">
-                <input type="text" placeholder="search course..." name="searchbar" autofocus autocomplete="off">
-                <button type="submit" name="search" class="searchBtn"><i class="fas fa-search"></i></button>
-            </form>
-
-            <div class="icons">
-                <div id="login-btn" class="fas fa-user"></div>
-            </div>
-
+        <div class="icons">
+          <div id="login-btn" class="fas fa-user"></div>
         </div>
+      </div>
 
-        <div class="header-2">
-            <nav class="navbar">
-                <a href="#home">home</a>
-                <a href="#course">course</a>
-                <a href="#reviews">reviews</a>
-                <a href="#about">about us</a>
-            </nav>
-        </div>
-
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#course">course</a>
+          <a href="#reviews">reviews</a>
+          <a href="#about">about us</a>
+        </nav>
+      </div>
     </header>
 
     <!-- header ends -->
@@ -48,37 +52,45 @@
     <!-- mobile navbar  -->
 
     <nav class="bottom-navbar">
-        <a href="#home" class="fas fa-home"></a>
-        <a href="#course" class="fas fa-list"></a>
-        <a href="#reviews" class="fas fa-comments"></a>
-        <a href="#about" class="fas fa-address-card"></a>
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#course" class="fas fa-list"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
+      <a href="#about" class="fas fa-address-card"></a>
     </nav>
 
     <!-- login form  -->
 
     <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
 
-        <div id="close-login-btn" class="fas fa-times"></div>
-
-        <form action="">
-            <h3>sign in</h3>
-            <span>username</span>
-            <input type="email" name="" class="box" placeholder="enter your email" id="">
-            <span>password</span>
-            <input type="password" name="" class="box" placeholder="enter your password" id="">
-            <div class="checkbox">
-                <input type="checkbox" name="" id="remember-me">
-                <label for="remember-me"> remember me</label>
-            </div>
-            <input type="submit" value="sign in" class="btn">
-            <p>forget password ? <a href="#">click here</a></p>
-            <p>don't have an account ? <a href="#">create one</a></p>
-        </form>
-
+      <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input
+          type="email"
+          name=""
+          class="box"
+          placeholder="enter your email"
+          id=""
+        />
+        <span>password</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="enter your password"
+          id=""
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+      </form>
     </div>
 
     <script src="starter.js"></script>
-
-</body>
-
+  </body>
 </html>
